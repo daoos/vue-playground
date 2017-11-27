@@ -1,0 +1,16 @@
+<template>
+    <h1 class="title page-title">{{ content }}</h1>
+</template>
+
+<script>
+    export default {
+        name: 'PageTitle',
+        props: ['content']
+    }
+</script>
+<style lang="scss">
+    .page-title {
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 8px;
+    }
+</style>
