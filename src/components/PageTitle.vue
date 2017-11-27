@@ -10,6 +10,7 @@
 </script>
 <style lang="scss">
     .page-title {
+        font-family: Roboto;
         border-bottom: 1px solid #ebebeb;
         padding-bottom: 8px;
     }

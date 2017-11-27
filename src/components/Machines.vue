@@ -111,6 +111,7 @@
 
 <style lang="scss" scoped>
     .machines {
+        margin-top: 30px;
         user-select: none;
     }    
 </style>

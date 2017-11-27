@@ -1,4 +1,4 @@
-export default function () {
+export const centered = () => {
     return {
         template: `
             <div :style="style">
@@ -26,4 +26,29 @@ export default function () {
             };
         },
     };
+}
+
+
+
+
+export const padding = () => {
+    return {
+        template: `
+            <div :style="style">
+                <div>
+                <story/>
+                </div>
+            </div>
+        `,
+        data () {
+            return {
+                style: {
+                    padding: '100px',
+                    'background-color': '#f7f7f7',
+                    height: '100vh',
+                    'overflow-y': 'hidden'
+                }
+            }
+        }
+    }
 }

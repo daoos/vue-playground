@@ -37,6 +37,7 @@
 .machine-box {
   padding: 15px;
   color: #999;
+  font-family: Roboto;
   cursor: pointer;
 
   &:hover {
