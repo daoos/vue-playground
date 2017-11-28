@@ -5,7 +5,9 @@
 <script>
     export default {
         name: 'page-title',
-        props: ['content']
+        props: {
+            content: String
+        }
     }
 </script>
 <style lang="scss">
