@@ -40,7 +40,7 @@ export const padding = () => {
         data () {
             return {
                 style: {
-                    padding: '100px',
+                    padding: '50px',
                     'background-color': '#f7f7f7',
                     height: '100vh',
                     'overflow-y': 'hidden'

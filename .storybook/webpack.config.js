@@ -19,7 +19,6 @@ module.exports = (storybookBaseConfig, configType) => {
                             docs: [
                                 'storybook-readme/env/vue/docs-loader',
                                 docsLoader,
-                                'html-loader',
                                 'markdown-loader',
                             ],
                         },
@@ -31,10 +30,6 @@ module.exports = (storybookBaseConfig, configType) => {
             return rule;
         }
     );
-
-    storybookBaseConfig.module.resolve = {
-        extensions: ['.js', '.vue']
-    }
 
     storybookBaseConfig.module.rules.push({
         test: /\.md$/,

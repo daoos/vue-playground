@@ -18,7 +18,6 @@ storiesOf('Machine Box', module)
             }
         }
     }))
-    .addDecorator(padding)
     .add('grid of machines', () => ({
         components: {
             Machines
