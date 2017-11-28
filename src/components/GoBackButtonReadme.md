@@ -1,31 +1,17 @@
 # Button
 
-Normal application button. 
+Go back button component
 
 ```js
-import MyButton from 'components/MyButton';
+import GoBackButton from 'components/GoBackButton.vue';
 ```
 
-<!-- STORY -->
+### Template usage
 
-### Flags usage rules
-
-Use **alert** and **success** flags only in these cases:
-
-**alert** - when `onClick` action removes something
 
 ```js
 {
-  components: { MyButton },
-  template: `<my-buton alert="true">Remove User</my-button>`
-}
-```
-
-**success** - when `onClick` action adds something
-
-```js
-{
-  components: { MyButton },
-  template: `<my-buton success="true">Add User</my-button>`
+  components: { GoBackButton },
+  template: `<go-back-button />`
 }
 ```

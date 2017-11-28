@@ -24,6 +24,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.16",
     "@storybook/addon-links": "^3.2.16",
+    "@storybook/addon-options": "^3.2.16",
     "@storybook/vue": "^3.2.16",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -34,7 +35,9 @@
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
     "node-sass": "^4.5.3",
+    "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
+    "storybook-readme": "^3.1.1",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",

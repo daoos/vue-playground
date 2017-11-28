@@ -1,4 +1,5 @@
 import { configure } from '@storybook/vue'
+import { setOptions } from '@storybook/addon-options';
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
@@ -23,6 +24,16 @@ const req = require.context('../src/stories', true, /\.stories\.js$/)
 function loadStories() {
   req.keys().forEach((filename) => req(filename))
 }
+
+setOptions({
+  name: 'Vue playground',
+  url: 'https://github.com/delete/vue-playground',
+  goFullScreen: false,
+  showLeftPanel: true,
+  showDownPanel: true,
+  showSearchBox: false,
+  downPanelInRight: true,
+});
 
 // function loadStories() {
 //   require('../src/stories')

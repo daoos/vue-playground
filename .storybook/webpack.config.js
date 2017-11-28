@@ -36,7 +36,7 @@ module.exports = (storybookBaseConfig, configType) => {
         test: /\.md$/,
         use: [
             {
-                loader: 'markdown-loader',
+                loader: 'raw-loader',
             },
         ],
     });
