@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import GoBackButton from '../components/GoBackButton.vue';
-import GoBackButtonReadme from '../components/GoBackButtonReadme.md'
+import GoBackButton from '../components/buttons/GoBackButton.vue';
+import GoBackButtonReadme from '../components/buttons/GoBackButtonReadme.md'
 import { storiesOf } from '@storybook/vue';
 import { withReadme } from 'storybook-readme';
 

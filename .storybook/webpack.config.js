@@ -32,6 +32,10 @@ module.exports = (storybookBaseConfig, configType) => {
         }
     );
 
+    storybookBaseConfig.module.resolve = {
+        extensions: ['.js', '.vue']
+    }
+
     storybookBaseConfig.module.rules.push({
         test: /\.md$/,
         use: [

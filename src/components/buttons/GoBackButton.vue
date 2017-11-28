@@ -16,7 +16,7 @@
   import { action } from '@storybook/addon-actions';
 
   export default {
-    name: 'GoBackButton',
+    name: 'go-back-button',
     methods: {
       clicked () {
         action('clicked')()

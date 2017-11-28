@@ -28,6 +28,7 @@
 
 <script>
   export default {
+    name: 'page-with-tabs',
     data () {
       return {
         items: ['Item One', 'Item Seventeen', 'Item Five'],

@@ -28,9 +28,6 @@ export const centered = () => {
     };
 }
 
-
-
-
 export const padding = () => {
     return {
         template: `

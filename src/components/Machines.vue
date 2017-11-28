@@ -45,11 +45,11 @@
 </template>
 
 <script>
-    import PageTitle from './PageTitle.vue'
+    import PageTitle from './custom-elements/PageTitle.vue'
     import MachineBox from './MachineBox.vue'
     
     export default {
-        name: 'Machines',
+        name: 'machines',
 
         components: {
             PageTitle,

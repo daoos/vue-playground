@@ -18,7 +18,7 @@
   import { action } from "@storybook/addon-actions";
 
   export default {
-    name: "MachineBox",
+    name: "machine-box",
     props: {
       machine: {
         type: Object,
