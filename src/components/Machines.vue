@@ -8,6 +8,7 @@
 
                 <machine-box
                     @on-click="selectMachine"
+                    :icon="computerIcon"
                     :machine="machine" v-for="machine in machines" :key="machine.machine_id"></machine-box>
 
                 <template v-if="error">
@@ -45,6 +46,8 @@
 </template>
 
 <script>
+    import { action } from "@storybook/addon-actions";
+    
     import PageTitle from './custom-elements/PageTitle.vue'
     import MachineBox from './MachineBox.vue'
     
@@ -56,55 +59,23 @@
             MachineBox
         },
 
+        props: {
+            machines: Array,
+            loading: Boolean
+        },
+
         data () {
             return {
-                loading: false,
-                machines: [],
                 error: false,
-                errorMessage: ''
+                errorMessage: '',
+                computerIcon: 'computer'
             }
         },
 
         methods: {
             selectMachine (machine) {
-                
+                action("clicked")(machine)
             },
-            loadMachines () {
-                this.loading = true;
-
-                setTimeout(() => {
-                    this.machines = [{
-                        root: '/m/1',
-                        machine_id: '1',
-                        machine_name: 'Machine 1'
-                    },
-                    {
-                        root: '/m/2',
-                        machine_id: '2',
-                        machine_name: 'Machine 2'
-                    },
-                    {
-                        root: '/m/3',
-                        machine_id: '3',
-                        machine_name: 'Machine 3'
-                    },
-                    {
-                        root: '/m/4',
-                        machine_id: '4',
-                        machine_name: 'Machine 5'
-                    },
-                    {
-                        root: '/m/6',
-                        machine_id: '6',
-                        machine_name: 'Machine 6'
-                    }];
-                    this.loading = false;
-                }, 2000);
-            }
-        },
-
-        created () {
-            this.loadMachines()
         }
     }
 </script>
