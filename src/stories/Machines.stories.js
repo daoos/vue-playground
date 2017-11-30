@@ -5,12 +5,14 @@ import { withKnobs, object, button } from '@storybook/addon-knobs';
 
 import MachineBox from '../components/MachineBox.vue'
 import Machines from '../components/Machines.vue'
-import MachinesReadme from '../components//MachinesReadme.md'
+import MachinesReadme from '../components/MachinesReadme.md'
+import MachineBoxReadme from '../components/MachineBoxReadme.md'
 
 import { padding } from './decorators'
 
 storiesOf('Machine Box', module)
     .addDecorator(withKnobs)
+    .addDecorator(withReadme(MachineBoxReadme))
     .addDecorator(padding)
     .add('only one machine component', () => {
         const myMachine = object('Machine Object', {
